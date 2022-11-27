@@ -1,0 +1,352 @@
+@media (max-width: 1024px) {
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .nav-bar {
+    img {
+      width: 50%;
+    }
+
+    ul {
+      font-size: 0.8rem;
+
+      li {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .all-files-content {
+    padding-right: 2rem;
+
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    form {
+      input {
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  .prod-content {
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+
+  .prod-about {
+    margin-right: 2rem;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .fylo-works {
+    width: 37%;
+  }
+
+  .founder-card {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .prod-logo {
+    img {
+      padding: 1.5rem 0;
+    }
+  }
+
+  .access-content {
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-right: 5rem;
+    }
+  }
+
+  .contact-form {
+    form {
+      input {
+        padding: 0.5rem;
+      }
+
+      input[type=submit] {
+        width: 35%;
+      }
+
+    }
+
+  }
+  footer{
+    padding: 4rem 0;
+    font-size: 0.8rem;
+
+    .footer-contents{
+      .footer-logo{
+        img{
+          width: 12%;
+        }
+      }
+    }
+    .social-icons{
+     
+     li{
+      margin-left: 0.5rem;
+      
+     }
+     i{
+      font-size: 1rem;
+     }
+    }
+  }
+}
+@media (max-width: 768px) {
+
+  .all-files-content {
+    padding-right: 1rem;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    form {
+      input {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+      }
+      input[type=submit]{
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .prod-content {
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .prod-about {
+    margin-right: 1rem;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .fylo-works {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+
+  .founder-card {
+    width: 100%;
+    font-size: 0.6rem;
+
+    .profile{
+      img{
+        width: 10%;
+      }
+      .name-title{
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  .access{
+    padding: 2rem 0;
+  }
+  .access-content {
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .contact-form {
+    form {
+      input {
+        font-size: 0.7rem;
+      }
+      input[type=submit] {
+        width: 35%;
+      }
+
+    }
+
+  }
+  footer{
+    padding: 2rem 0;
+    font-size: 0.7rem;
+
+    .footer-contents{
+      .footer-logo{
+        img{
+          width: 12%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 428px) {
+
+  .grid-select{
+    grid-template-columns: 1fr;
+  }
+  .nav-bar{
+    flex-direction: column;
+  }
+  .all-files{
+    margin-top: 0.5rem;
+  }
+  .all-files-content {
+    text-align: center;
+    padding-right: 0;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin-right: 0;
+    }
+
+    form {
+      input {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+      }
+      input[type=submit]{
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .prod-content {
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .prod-about {
+    margin-right: 0rem;
+    text-align: center;
+  }
+
+  .fylo-works {
+   margin: 0 auto;
+  }
+
+  .founder-card {
+    width: 100%;
+    font-size: 0.7rem;
+
+    .profile{
+      img{
+        width: 10%;
+      }
+      .name-title{
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  .prod-logo{
+    img{
+      padding: 0;
+    }
+  }
+  .access{
+    padding: 2rem 0;
+  }
+  .access-content {
+    
+    text-align: center;
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .contact-form {
+    form {
+      align-items: center;
+    }
+
+  }
+  footer{
+    padding: 2rem 0;
+    font-size: 0.7rem;
+
+    .footer-contents{
+      align-items: center;
+      .footer-logo{
+        img{
+          width: 50%;
+        }
+      }
+    }
+  }
+  .grid-select-footer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .site-link-flex{
+    ul{
+      flex-direction: row;
+      gap: 1rem ;
+    }
+  }
+}
+@media (max-width: 428px) {
+
+  .fylo-works {
+   margin: 0 auto;
+   width: 45%;
+  }
+
+  footer{
+    padding: 2rem 0;
+    font-size: 0.7rem;
+
+    .footer-contents{
+      align-items: center;
+      .footer-logo{
+        img{
+          width: 50%;
+        }
+      }
+    }
+  }
+  .grid-select-footer{
+    grid-template-columns: 1fr;
+  }
+  .social-icons{
+    ul{
+      justify-content: center;
+    }
+  }
+}

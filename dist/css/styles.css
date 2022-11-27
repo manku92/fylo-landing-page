@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 1rem 0rem;
+  color: hsl(243deg, 87%, 12%);
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.grid-select {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar img {
+  width: 70%;
+}
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar ul li {
+  margin-right: 2rem;
+  padding: 1rem;
+}
+.nav-bar ul a {
+  padding-bottom: 0.8rem;
+  color: hsl(243deg, 87%, 12%);
+  font-weight: 400;
+}
+.nav-bar ul a:hover {
+  border-bottom: 1px solid hsl(243deg, 87%, 12%);
+}
+
+.all-files {
+  margin-top: 1.5rem;
+}
+
+.all-files-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3rem;
+  line-height: 1.5;
+}
+.all-files-content h2 {
+  font-size: 2.5rem;
+}
+.all-files-content p {
+  font-size: 1.1rem;
+  margin-right: 5.2rem;
+  padding: 1.2rem 0;
+}
+.all-files-content form input {
+  padding: 0.7rem 1rem;
+}
+.all-files-content form input[type=email] {
+  width: 50%;
+}
+.all-files-content form input[type=submit] {
+  margin-left: 1rem;
+  width: 25%;
+  border: none;
+  background-color: hsl(224deg, 93%, 58%);
+  color: white;
+}
+.all-files-content form input[type=submit]:hover {
+  background-color: hsla(224deg, 93%, 58%, 0.5);
+  cursor: pointer;
+}
+
+.layout-drive img {
+  width: 100%;
+}
+
+.productive {
+  background-color: hsl(240deg, 75%, 98%);
+}
+
+.prod-content h2 {
+  font-size: 2.5rem;
+}
+
+.prod-about {
+  margin: 1rem 0;
+  line-height: 1.5;
+  margin-right: 6rem;
+}
+.prod-about p {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.fylo-works {
+  margin: 1rem 0;
+  width: 24%;
+}
+.fylo-works img {
+  margin-left: 0.5rem;
+}
+.fylo-works a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: hsl(170deg, 45%, 43%);
+}
+.fylo-works a:hover {
+  border-bottom: 1px solid hsl(170deg, 45%, 43%);
+}
+
+.founder-card {
+  background-color: white;
+  width: 42%;
+  padding: 1rem;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+.founder-card .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+.founder-card .profile img {
+  width: 20%;
+  border-radius: 50%;
+}
+.founder-card .profile .name-title {
+  margin-left: 1rem;
+}
+
+.prod-logo img {
+  padding: 3rem 0;
+}
+
+.access {
+  background-color: hsla(243deg, 87%, 12%, 0.808);
+  padding: 5rem 0;
+}
+
+.access-content {
+  color: hsl(240deg, 75%, 98%);
+}
+.access-content h2 {
+  font-size: 2.2rem;
+}
+.access-content p {
+  font-size: 1.1rem;
+  margin-right: 10rem;
+  padding: 1rem 0;
+  font-weight: 400;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input {
+  padding: 0.7rem 1rem;
+}
+.contact-form form input[type=email] {
+  width: 50%;
+}
+.contact-form form input[type=submit] {
+  width: 25%;
+  margin-top: 1rem;
+  border: none;
+  background-color: hsl(224deg, 93%, 58%);
+  color: white;
+}
+.contact-form form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+footer {
+  background-color: hsl(243deg, 87%, 12%);
+  color: white;
+  padding: 6rem 0;
+}
+footer .footer-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-select-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  padding: 1rem 0;
+}
+
+.contact-email-card {
+  margin-bottom: 0.6rem;
+}
+.contact-email-card ul {
+  display: flex;
+  flex-direction: row;
+}
+.contact-email-card img {
+  width: 80%;
+}
+.contact-email-card p {
+  margin-left: 0.5rem;
+}
+
+.site-link-flex a,
+.social-icons a {
+  color: white;
+}
+
+.site-link-flex ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.site-link-flex li {
+  margin-bottom: 0.6rem;
+}
+
+.social-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+}
+.social-icons li {
+  margin-left: 2rem;
+}
+.social-icons i {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.social-icons i:hover {
+  color: lightblue;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  .nav-bar img {
+    width: 50%;
+  }
+  .nav-bar ul {
+    font-size: 0.8rem;
+  }
+  .nav-bar ul li {
+    margin-right: 1rem;
+  }
+  .all-files-content {
+    padding-right: 2rem;
+  }
+  .all-files-content h2 {
+    font-size: 1.7rem;
+  }
+  .all-files-content p {
+    font-size: 1rem;
+  }
+  .all-files-content form input {
+    padding: 0.5rem;
+  }
+  .prod-content h2 {
+    font-size: 1.7rem;
+  }
+  .prod-about {
+    margin-right: 2rem;
+  }
+  .prod-about p {
+    font-size: 1rem;
+  }
+  .fylo-works {
+    width: 37%;
+  }
+  .founder-card {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+  .prod-logo img {
+    padding: 1.5rem 0;
+  }
+  .access-content h2 {
+    font-size: 1.7rem;
+  }
+  .access-content p {
+    font-size: 1rem;
+    margin-right: 5rem;
+  }
+  .contact-form form input {
+    padding: 0.5rem;
+  }
+  .contact-form form input[type=submit] {
+    width: 35%;
+  }
+  footer {
+    padding: 4rem 0;
+    font-size: 0.8rem;
+  }
+  footer .footer-contents .footer-logo img {
+    width: 12%;
+  }
+  footer .social-icons li {
+    margin-left: 0.5rem;
+  }
+  footer .social-icons i {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .all-files-content {
+    padding-right: 1rem;
+  }
+  .all-files-content h2 {
+    font-size: 1.2rem;
+  }
+  .all-files-content p {
+    font-size: 0.8rem;
+  }
+  .all-files-content form input {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+  .all-files-content form input[type=submit] {
+    margin-left: 0.5rem;
+  }
+  .prod-content h2 {
+    font-size: 1rem;
+  }
+  .prod-about {
+    margin-right: 1rem;
+  }
+  .prod-about p {
+    font-size: 0.8rem;
+  }
+  .fylo-works {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+  .founder-card {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  .founder-card .profile img {
+    width: 10%;
+  }
+  .founder-card .profile .name-title {
+    margin-left: 0.5rem;
+  }
+  .access {
+    padding: 2rem 0;
+  }
+  .access-content h2 {
+    font-size: 1rem;
+  }
+  .access-content p {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+  }
+  .contact-form form input {
+    font-size: 0.7rem;
+  }
+  .contact-form form input[type=submit] {
+    width: 35%;
+  }
+  footer {
+    padding: 2rem 0;
+    font-size: 0.7rem;
+  }
+  footer .footer-contents .footer-logo img {
+    width: 12%;
+  }
+}
+@media (max-width: 428px) {
+  .grid-select {
+    grid-template-columns: 1fr;
+  }
+  .nav-bar {
+    flex-direction: column;
+  }
+  .all-files {
+    margin-top: 0.5rem;
+  }
+  .all-files-content {
+    text-align: center;
+    padding-right: 0;
+  }
+  .all-files-content h2 {
+    font-size: 1.2rem;
+  }
+  .all-files-content p {
+    font-size: 0.8rem;
+    margin-right: 0;
+  }
+  .all-files-content form input {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+  .all-files-content form input[type=submit] {
+    margin-left: 0.5rem;
+  }
+  .prod-content h2 {
+    text-align: center;
+  }
+  .prod-about {
+    margin-right: 0rem;
+    text-align: center;
+  }
+  .fylo-works {
+    margin: 0 auto;
+  }
+  .founder-card {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  .founder-card .profile img {
+    width: 10%;
+  }
+  .founder-card .profile .name-title {
+    margin-left: 0.5rem;
+  }
+  .prod-logo img {
+    padding: 0;
+  }
+  .access {
+    padding: 2rem 0;
+  }
+  .access-content {
+    text-align: center;
+  }
+  .access-content h2 {
+    font-size: 1rem;
+  }
+  .access-content p {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+  }
+  .contact-form form {
+    align-items: center;
+  }
+  footer {
+    padding: 2rem 0;
+    font-size: 0.7rem;
+  }
+  footer .footer-contents {
+    align-items: center;
+  }
+  footer .footer-contents .footer-logo img {
+    width: 50%;
+  }
+  .grid-select-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .site-link-flex ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+@media (max-width: 428px) {
+  .fylo-works {
+    margin: 0 auto;
+    width: 45%;
+  }
+  footer {
+    padding: 2rem 0;
+    font-size: 0.7rem;
+  }
+  footer .footer-contents {
+    align-items: center;
+  }
+  footer .footer-contents .footer-logo img {
+    width: 50%;
+  }
+  .grid-select-footer {
+    grid-template-columns: 1fr;
+  }
+  .social-icons ul {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
